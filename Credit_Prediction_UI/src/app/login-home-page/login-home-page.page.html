@@ -1,0 +1,165 @@
+<!-- <h1 class="text-center">
+Inspection  App
+</h1>
+<app-show-inspection></app-show-inspection> -->
+<ion-content>
+  
+  <ion-card style="width: 70%; margin-left: 16%;background: rgb(181, 230, 213);">
+    <ion-title style="text-align: center;color: rgb(108, 108, 221);margin-bottom: 1%;">PREDICTION FORM</ion-title>
+<form>
+  <div class="mb-3"> 
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;"> Gender</label>
+      </div>
+    <div class="col">
+    <select class="form-select" id="gender" name="gender" aria-label="Default select example" #gender style="width: 50%;">
+    <option selected>-- select gender --</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+</div>
+</div>
+  </div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;"> Married Status</label>
+  </div>
+  <div class="col">
+    <select class="form-select" id="married" name="married" aria-label="Default select example" #married style="width: 50%;">
+    <option selected>-- select married status --</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+</div>
+  </div>
+  </div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Dependents</label>
+  </div>
+  <div class="col">
+    <select class="form-select" id="dependents" name="dependents" aria-label="Default select example" #dependents style="width: 50%;">
+    <option selected>-- select dependents --</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3+">3+</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Education</label>
+  </div>
+  <div class="col">
+    <select class="form-select" id="education" name="education" aria-label="Default select example" #education style="width: 50%;">
+    <option selected>-- select education --</option>
+    <option value="Graduate">Graduate</option>
+    <option value="Not Graduate">Not Graduate</option>
+  </select>
+</div>
+</div>
+  </div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Self_Employed</label>
+  </div>
+  <div class="col">
+    <select class="form-select" id="employed" name="employed" aria-label="Default select example" #employed style="width: 50%;">
+    <option selected>-- select Self_Employed --</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+  </div>
+</div>
+</div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Credit_History</label>
+  </div>
+  <div class="col">
+    <select class="form-select" id="credit" name="credit" aria-label="Default select example" #credit style="width: 50%;">
+    <option selected>-- select Credit_History --</option>
+    <option value="1.000000">1.000000</option>
+    <option value="0.000000">0.000000</option>
+    <option value="0.842199">0.842199</option>
+  </select>
+</div>
+</div>
+  </div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Property_Area</label>
+  </div>
+  <div class="col">
+    <select class="form-select" id="area" name="area" aria-label="Default select example" #area style="width: 50%;">
+    <option selected>-- select Property_Area --</option>
+    <option value="Semiurban">Semiurban</option>
+    <option value="Urban">Urban</option>
+    <option value="Rural">Rural</option>
+  </select>
+</div>
+</div>
+  </div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Enter ApplicantIncome</label>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" id="ApplicantIncome" name="ApplicantIncome" placeholder="Applicant Income" #ApplicantIncome style="width: 50%;">
+  </div>
+</div>
+</div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Enter CoapplicantIncome</label>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Coapplicant  Income" #CoapplicantIncome style="width: 50%;">
+  </div>
+</div>
+</div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Enter LoanAmount</label>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="Loan Amount" #LoanAmount style="width: 50%;">
+  </div>
+</div>
+</div>
+  <div class="mb-3">
+    <div class="row" style="margin-left: 30%;">
+      <div class="col-3">
+    <label for="exampleFormControlInput1" class="form-label" style="color: black;">Enter Loan_Amount_Term</label>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" id="Loan_Amount_Term" name="Loan Amount Term" placeholder="Loan_Amount_Term" #Loan_Amount_Term style="width: 50%;">
+  </div>
+</div>
+  </div>
+  
+  
+  
+  <div class="row" style="margin-bottom: 1%;margin-left: 5%;">
+    <div class="col-2 offset-4">
+      <button type="submit" class="btn btn-primary" (click)="getStatus()">PREDICT</button>
+    </div>
+    <div class="col-2">
+      <button type="clear"  class="btn btn-secondary">CLEAR</button>
+    </div>
+      </div>
+      </form>
+    </ion-card>
+    </ion-content>
